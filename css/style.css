@@ -134,8 +134,9 @@ ul li a:hover,
 .section#home .home-right img {
   width: 700px;
   position: relative;
-  top: -140px;
+  top: -166px;
   left: -50px;
+  filter: drop-shadow(-25px 27px 46px #e0e0e3);
 }
 /* btn */
 .btn {
@@ -193,6 +194,52 @@ ul li a:hover,
   margin-left: 50px;
 }
 
+/* home 하단이동 */
+.go-to-next a {
+  width: 35px;
+  height: 35px;
+  position: relative;
+  display: inline-block;
+  background: #f52225;
+  border-radius: 50%;
+  animation: down 1s linear infinite;
+  opacity: 1;
+}
+@keyframes down{
+  from{
+      transform: translateY(-100%);
+     
+  }
+
+  to{
+      transform: translateY(0%);
+      opacity: 0.4;
+  }
+}
+
+.go-to-next a span {
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  width: 10px;
+  height: 10px ;
+  position: absolute;
+  top: -3px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transform: rotate(135deg);
+}
+.go-to-next {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  width: 35px;
+  margin: auto;
+  z-index: 10;
+  text-align: center;
+}
 /* main title */
 .p-title {
   color: #f52225;
@@ -314,6 +361,7 @@ ul li a:hover,
   border: 2px solid #999;
   background: #fff;
   font-size: 20px;
+  cursor: pointer;
 }
 .experience-btn button.before {
   background: #f52225;
@@ -353,6 +401,7 @@ ul li a:hover,
   font-size: 20px;
   border: 0;
   margin-bottom: 40px;
+
 }
 /* Skills & Programs */
 
@@ -428,9 +477,8 @@ ul li a:hover,
   margin: 20vh auto;
   position: relative;
   height: 100vh;
-
 }
-.project-h{
+.project-h {
   height: 100vh;
 }
 
@@ -484,19 +532,79 @@ ul li a:hover,
 .phone-mockup .phone {
   position: absolute;
   width: 100%;
+  filter: drop-shadow(0px 4px 3px #d6d3d3);
+
+}
+.section .p-5{
+  position: relative;
+}
+.phone-down img{
+  position: absolute;
 }
 .phone-mockup a.hidden-phone {
   display: block;
-  width: 142px;
-  height: 253px;
+  width: 153px;
+  height: 340px;
   position: absolute;
-  top: 52px;
-  left: 115px;
+  top: 15px;
+  left: 139px;
   overflow: hidden;
+  border-radius: 20px;
 }
+
+
 .hidden-phone img {
   width: 100%;
   position: relative;
+}
+
+/* .phone-down img{
+  width: 559px;
+  height: 520px;
+  filter: drop-shadow(0px 4px 8px #d6d3d3);
+
+}
+.phone-down {
+  margin-top:75px;
+  position: relative;
+  overflow: hidden;
+  width: 559px;
+  height: 520px;
+  
+} */
+ /* uiux_project */
+ .phone-uxui {
+  position: relative;
+  margin-top:75px;
+}
+
+.mobile-mockup {
+  width: 343px;
+  height: 592px;
+  top: -69px;
+  left: 124px;
+}
+.mobile-mockup .iphone{
+  width: 583px;
+  height: 568px;
+  filter: drop-shadow(0px 4px 8px #d6d3d3);
+
+}
+.crop {
+  position: relative;
+  width: 242px;
+  height: 518px;
+  top: -550px;
+  left: 216px;
+  border-radius: 23px;
+  overflow: hidden;
+}
+.crop iframe {
+  position: absolute;
+  width: 243px;
+  height: 567px;
+  top: 0;
+  left: 0;
 }
 /* tablet */
 .tablet-mockup {
@@ -527,11 +635,10 @@ ul li a:hover,
 /* 오른쪽 설명 */
 .right {
   position: absolute;
-  top: 330px;
-  right: 0;
-  width: 43%;
+  top: 350px;
+  right: -50px;
+  width: 445px;
   height: 462px;
-  border: 2px solid #666666;
   border-radius: 20px;
   transform: translateX(100%);
   transition: all 2s ease-in-out;
@@ -548,7 +655,6 @@ ul li a:hover,
 
 .project-info {
   position: relative;
-  padding: 35px;
 }
 .project-info > * {
   display: block;
@@ -604,7 +710,7 @@ ul li a:hover,
   margin-right: 24px;
   padding: 10px 20px;
 }
-.right .btn-r:last-child{
+.right .btn-r:last-child {
   margin-right: 0;
 }
 .right .btn-r:before {
@@ -633,9 +739,12 @@ ul li a:hover,
   padding-left: 20px;
 }
 
+
+
 /* contact */
 #contact {
   background: #f9f9fc;
+
 }
 #contact .p-title::after {
   left: 75px;
@@ -670,3 +779,5 @@ ul li a:hover,
 .dairy a:hover {
   color: #f52225;
 }
+
+

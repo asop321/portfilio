@@ -20,3 +20,24 @@ btn1.click(function () {
 })
 
 document.querySelectorAll('.button').forEach(button => button.innerHTML = '<div><span>' + button.textContent.trim().split('').join('</span><span>') + '</span></div>');
+
+
+
+/* top btn */
+const btt = $('#back-to-top')
+$(window).scroll(function () {
+  if ($(window).scrollTop() > 500) {
+    btt.addClass('visible')
+  } else {
+    btt.removeClass('visible')
+  }
+})
+btt.click(function (e) {
+  e.preventDefault()
+  $('html,body').animate(
+    {
+      scrollTop: 0,
+    },
+    700,
+  )
+})
