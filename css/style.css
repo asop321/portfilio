@@ -144,7 +144,6 @@ ul li a:hover,
 
   border: 2px solid #f52225;
   background: none;
-  color: #f52225;
   padding: 10px 57px;
   border-radius: 5px;
   font-size: 22px;
@@ -152,12 +151,13 @@ ul li a:hover,
   cursor: pointer;
   transition: all 0.5s;
   position: relative;
-  color: #f52225;
   overflow: hidden;
   margin-right: 10px;
 }
-
-.btn:hover {
+.btn a {
+  color: #333;
+}
+.btn:hover a {
   color: white;
 }
 
@@ -177,6 +177,9 @@ ul li a:hover,
 
 .btn:hover:before {
   height: 190%;
+}
+.btn a {
+  text-decoration: none;
 }
 
 .section#home .home-left .text_box {
@@ -205,15 +208,14 @@ ul li a:hover,
   animation: down 1s linear infinite;
   opacity: 1;
 }
-@keyframes down{
-  from{
-      transform: translateY(-100%);
-     
+@keyframes down {
+  from {
+    transform: translateY(-100%);
   }
 
-  to{
-      transform: translateY(0%);
-      opacity: 0.4;
+  to {
+    transform: translateY(0%);
+    opacity: 0.4;
   }
 }
 
@@ -221,7 +223,7 @@ ul li a:hover,
   border-top: 1px solid #fff;
   border-right: 1px solid #fff;
   width: 10px;
-  height: 10px ;
+  height: 10px;
   position: absolute;
   top: -3px;
   left: 0;
@@ -401,7 +403,6 @@ ul li a:hover,
   font-size: 20px;
   border: 0;
   margin-bottom: 40px;
-
 }
 /* Skills & Programs */
 
@@ -478,10 +479,9 @@ ul li a:hover,
   position: relative;
   height: 100vh;
 }
-.project-h {
-  height: 100vh;
+.project-inner.p-5{
+  margin-bottom: 36vh;
 }
-
 /* 왼쪽 기기 */
 .left {
   position: absolute;
@@ -533,12 +533,11 @@ ul li a:hover,
   position: absolute;
   width: 100%;
   filter: drop-shadow(0px 4px 3px #d6d3d3);
-
 }
-.section .p-5{
+.section .p-5 {
   position: relative;
 }
-.phone-down img{
+.phone-down img {
   position: absolute;
 }
 .phone-mockup a.hidden-phone {
@@ -552,30 +551,15 @@ ul li a:hover,
   border-radius: 20px;
 }
 
-
 .hidden-phone img {
   width: 100%;
   position: relative;
 }
 
-/* .phone-down img{
-  width: 559px;
-  height: 520px;
-  filter: drop-shadow(0px 4px 8px #d6d3d3);
-
-}
-.phone-down {
-  margin-top:75px;
+/* uiux_project */
+.phone-uxui {
   position: relative;
-  overflow: hidden;
-  width: 559px;
-  height: 520px;
-  
-} */
- /* uiux_project */
- .phone-uxui {
-  position: relative;
-  margin-top:75px;
+  margin-top: 75px;
 }
 
 .mobile-mockup {
@@ -584,18 +568,19 @@ ul li a:hover,
   top: -69px;
   left: 124px;
 }
-.mobile-mockup .iphone{
+.mobile-mockup .iphone {
   width: 583px;
   height: 568px;
   filter: drop-shadow(0px 4px 8px #d6d3d3);
-
+  position: relative;
+  left: 170px;
 }
 .crop {
   position: relative;
   width: 242px;
   height: 518px;
   top: -550px;
-  left: 216px;
+  left: 388px;
   border-radius: 23px;
   overflow: hidden;
 }
@@ -605,6 +590,19 @@ ul li a:hover,
   height: 567px;
   top: 0;
   left: 0;
+}
+
+.mobile-gif {
+  position: absolute;
+  top: 0;
+  left: 85px;
+}
+.mobile-gif img {
+  border-radius: 25px;
+  filter: drop-shadow(0px 4px 8px #d6d3d3);
+  margin-top: 14px;
+  width: 258px;
+  height: 538px;
 }
 /* tablet */
 .tablet-mockup {
@@ -707,7 +705,7 @@ ul li a:hover,
   height: 100%;
   width: 85px;
   display: inline-block;
-  margin-right: 24px;
+  margin-right: 23px;
   padding: 10px 20px;
 }
 .right .btn-r:last-child {
@@ -739,12 +737,9 @@ ul li a:hover,
   padding-left: 20px;
 }
 
-
-
 /* contact */
 #contact {
   background: #f9f9fc;
-
 }
 #contact .p-title::after {
   left: 75px;
@@ -767,6 +762,22 @@ ul li a:hover,
   width: 35px;
 }
 
+/* 이메일 복사 */
+#contact .email {
+  display: flex;
+}
+#contact #copy-button {
+  margin: 30px 0 0 20px;
+  width: 100px;
+  height: 37px;
+  line-height: 37px;
+  border-radius: 5px;
+  background: #f52225;
+  color: #fff;
+  border: 0;
+  font-size: 16px;
+}
+
 .dairy {
   position: relative;
   top: 16px;
@@ -779,5 +790,3 @@ ul li a:hover,
 .dairy a:hover {
   color: #f52225;
 }
-
-

@@ -1,7 +1,7 @@
 /* .visitor-icon */
 var btn1 = $('.btn1')
 var btn2 = $('.btn2')
-;
+  ;
 var icon1 = $('.experience-icon1')
 var icon2 = $('.experience-icon2')
 icon2.hide()
@@ -41,3 +41,4 @@ btt.click(function (e) {
     700,
   )
 })
+

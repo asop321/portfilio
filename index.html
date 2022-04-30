@@ -30,7 +30,7 @@
   <meta property="og:title" content="귀사와 하나가 되고싶은 김하나입니다." />
   <meta property="og:url" content="http://hana950411.dothome.co.kr/" />
   <meta property="og:type" content="website" />
-  <!--   <meta property="og:image" content="..." /> -->
+ <meta property="og:image" content="https://res.cloudinary.com/asop321/image/upload/v1651079898/SOM_2304_plnfhg.png" />
   <meta property="og:site_name" content="하나의 포트폴리오" />
   <meta property="og:description" content="현실에 안주하지않고 발전할 웹퍼블리셔의 포트폴리오입니다." />
   <!-- 트위터 미리보기 -->
@@ -47,8 +47,9 @@
 </head>
 
 <body>
-  <div class="circle"></div>
-  <div id="wrap ">
+  <h2>test</h2>
+
+  <div id="wrap">
 
     <div class="header">
       <nav>
@@ -97,9 +98,9 @@
             </div>
             <p class="home-p">웹디자이너 / 웹 퍼블리셔 김하나입니다.</p>
 
-            <a href="#" target="blank"> <button class="btn" type="button">이력서</button></a>
+            <button class="btn" type="button"> <a href="#" target="blank">이력서</a></button>
 
-            <a href="https://github.com/asop321/portfilio" target="blank"><button class="btn">깃허브</button></a>
+            <button class="btn"><a href="https://github.com/asop321/portfilio" target="blank">깃허브</a></button>
 
           </div>
           <div class="home-right">
@@ -264,7 +265,7 @@
                 <img src="./img/php.png" alt="phone목업이미지" class="phone">
 
                 <a href="http://asop950411.dothome.co.kr/protject/protject1/" target='_blank' class="hidden-phone">
-                  <img src="./img/fullpage.png" alt="국민건강보험프로젝트phone화면">
+                  <img src="./img/project1-phohe.png" alt="국민건강보험프로젝트phone화면">
                 </a>
 
               </div>
@@ -301,7 +302,7 @@
       </div>
       <div class="section">
         <div class="project-inner">
-          <div class=".project-h">
+          <div class="project-h">
             <p class="p-title">Project</p>
             <h2 class="h2-title">Project 02</h2>
 
@@ -358,7 +359,7 @@
       </div>
       <div class="section">
         <div class="project-inner">
-          <div class=".project-h">
+          <div class="project-h">
             <p class="p-title">Project</p>
             <h2 class="h2-title">Project 03</h2>
 
@@ -384,8 +385,8 @@
 
                 </span>
                 <div class="right-btn">
-                  <a href="#" class="btn-r" target='_blank'><span>사이트</span></a>
-                  <a href="#" class="btn-r " target='_blank'><span>깃허브</span></a>
+                  <a href="https://asop321.github.io/protjet3/" class="btn-r" target='_blank'><span>사이트</span></a>
+                  <a href="https://github.com/asop321/protjet3" class="btn-r " target='_blank'><span>깃허브</span></a>
 
                 </div>
 
@@ -400,7 +401,7 @@
       </div>
       <div class="section">
         <div class="project-inner">
-          <div class=".project-h">
+          <div class="project-h">
             <p class="p-title">Project</p>
             <h2 class="h2-title">Project 04</h2>
 
@@ -445,7 +446,7 @@
       </div>
       <div class="section">
         <div class="project-inner p-5">
-          <div class=".project-h">
+          <div class="project-h">
             <p class="p-title">Project</p>
             <h2 class="h2-title">Project 05</h2>
 
@@ -460,6 +461,9 @@
                     allowfullscreen></iframe>
                 </div>
 
+              </div>
+              <div class="mobile-gif">
+                <img src="./img/project5.gif" alt="라펫gif">
               </div>
             </div>
           </div>
@@ -496,9 +500,35 @@
         <p class="p-content">포트폴리오를 봐주셔서 감사합니다
           현재에 안주하지않고 <br />발전하는 모습 보여드리겠습니다.</p>
         <p class="content-info"><span><img src="./img/phone.svg" alt="phone"></span> 010-8854-9819</p>
-        <p class="content-info"><span><img src="./img/mail.svg" alt="mail"></span> asop321 @ naver.com</p>
+        <div class="email">
+          <p id="content-holder" class="content-info"><span><img src="./img/mail.svg" alt="mail"></span> asop321 @
+            naver.com</p>
+          <button id="copy-button">복사하기</button>
+        </div>
+        <Script>
+          /* 이메일 주소 복사 */
+          document.execCommand("Copy");
+          var button = document.getElementById("copy-button"),
+            contentHolder = document.getElementById("content-holder");
+          copy = document.getElementById("")
+
+
+          button.addEventListener(
+            "click",
+            function () {
+              var range = document.createRange(),
+                selection = window.getSelection();
+              selection.removeAllRanges();
+              range.selectNodeContents(contentHolder);
+              selection.addRange(range);
+              document.execCommand("Copy");
+              selection.removeAllRanges();
+            },
+            false,
+          );
+        </Script>
         <p class="content-info"><span><img src="./img/map.svg" alt="map"></span> 경기도 하남시 신장로 175번길 21 </p>
-       
+
       </div>
     </div>
 
