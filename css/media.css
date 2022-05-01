@@ -1,0 +1,11 @@
+@media screen and (max-width:1430px){
+    body{
+        width: 100%;
+        max-width: 1425px;
+    }
+  
+   .section{
+       min-height: 140vh;
+   }
+}
+

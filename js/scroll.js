@@ -98,3 +98,6 @@ $(".hidden-tablet").hover(
 		img.stop().animate({ top: 0 }, 3000)
 	}
 )
+
+
+

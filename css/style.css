@@ -479,7 +479,7 @@ ul li a:hover,
   position: relative;
   height: 100vh;
 }
-.project-inner.p-5{
+.project-inner.p-5 {
   margin-bottom: 36vh;
 }
 /* 왼쪽 기기 */
@@ -789,4 +789,17 @@ ul li a:hover,
 }
 .dairy a:hover {
   color: #f52225;
+}
+
+#toTop {
+  position: fixed;
+  bottom: 100px;
+  z-index: 9999;
+  background-color: #f52225;
+  color: #fff;
+  text-decoration: none;
+  padding: 17px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  right: 5px;
 }

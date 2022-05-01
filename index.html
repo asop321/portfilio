@@ -30,7 +30,7 @@
   <meta property="og:title" content="귀사와 하나가 되고싶은 김하나입니다." />
   <meta property="og:url" content="http://hana950411.dothome.co.kr/" />
   <meta property="og:type" content="website" />
- <meta property="og:image" content="https://res.cloudinary.com/asop321/image/upload/v1651079898/SOM_2304_plnfhg.png" />
+  <meta property="og:image" content="https://res.cloudinary.com/asop321/image/upload/v1651079898/SOM_2304_plnfhg.png" />
   <meta property="og:site_name" content="하나의 포트폴리오" />
   <meta property="og:description" content="현실에 안주하지않고 발전할 웹퍼블리셔의 포트폴리오입니다." />
   <!-- 트위터 미리보기 -->
@@ -39,7 +39,8 @@
   <meta name="twitter:description" content="현실에 안주하지않고 발전할 웹퍼블리셔의 포트폴리오입니다." />
   <!--     <meta name="twitter:image" content="..." /> -->
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
   <!-- FONT ِAWESOME -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
     integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
@@ -47,7 +48,6 @@
 </head>
 
 <body>
-  <h2>test</h2>
 
   <div id="wrap">
 
@@ -284,7 +284,6 @@
                   #CSS3&nbsp;&nbsp;
                   #Java Script&nbsp;&nbsp;
                   #JQuery
-
                 </span>
                 <div class="right-btn">
 
@@ -366,10 +365,11 @@
             <div class="left">
               <div class="mockup">
                 <img src="./img/pc3.png" alt="데스크탑목업이미지" class="computer">
-                <a href="http://asop950411.dothome.co.kr/protject/protject2/" target='_blank' class="hidden">
-                  <img src="./img/hera_fullpage.png" alt="헤라PC화면">
+                <a href="https://asop321.github.io/protjet3/" target='_blank' class="hidden">
+                  <img src="./img/project3_full.png" alt="마루기획PC화면">
                 </a>
               </div>
+
             </div>
             <div class="right">
               <div class="project-info">
@@ -445,7 +445,7 @@
         </div>
       </div>
       <div class="section">
-        <div class="project-inner p-5">
+        <div class="project-inner project-b">
           <div class="project-h">
             <p class="p-title">Project</p>
             <h2 class="h2-title">Project 05</h2>
@@ -493,6 +493,7 @@
         </div>
       </div>
     </div>
+
     <div class="section" id="contact">
       <div class="section-inner">
         <p class="p-title">Contact</p>
@@ -507,7 +508,7 @@
         </div>
         <Script>
           /* 이메일 주소 복사 */
-          document.execCommand("Copy");
+          document.execCommand("copy");
           var button = document.getElementById("copy-button"),
             contentHolder = document.getElementById("content-holder");
           copy = document.getElementById("")
@@ -521,7 +522,7 @@
               selection.removeAllRanges();
               range.selectNodeContents(contentHolder);
               selection.addRange(range);
-              document.execCommand("Copy");
+              document.execCommand("copy");
               selection.removeAllRanges();
             },
             false,
@@ -531,6 +532,7 @@
 
       </div>
     </div>
+    <a id="toTop" href="#">TOP</a>
 
   </div>
 
