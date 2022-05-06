@@ -1,11 +1,7 @@
-@media screen and (max-width:1430px){
-    body{
-        width: 100%;
-        max-width: 1425px;
-    }
-  
-   .section{
-       min-height: 140vh;
-   }
-}
 
+
+@media screen and (min-width:900px) and (max-width:1500px) {
+    .project-inner.project-b {
+        margin-bottom: 36vh;
+      }
+}

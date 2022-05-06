@@ -139,12 +139,15 @@ ul li a:hover,
   filter: drop-shadow(-25px 27px 46px #e0e0e3);
 }
 /* btn */
-.btn {
+.home-btn{
+  display: flex;
+}
+.home-btn .btn {
   font-family: 'GmarketSansMedium';
 
   border: 2px solid #f52225;
   background: none;
-  padding: 10px 57px;
+  padding: 13px 15px;
   border-radius: 5px;
   font-size: 22px;
   text-transform: uppercase;
@@ -153,15 +156,15 @@ ul li a:hover,
   position: relative;
   overflow: hidden;
   margin-right: 10px;
+  text-decoration: none;
+width:150px;
 }
-.btn a {
-  color: #333;
-}
-.btn:hover a {
+
+.home-btn .btn:hover a {
   color: white;
 }
 
-.btn:before {
+.home-btn .btn:before {
   content: '';
   position: absolute;
   bottom: 0;
@@ -175,11 +178,16 @@ ul li a:hover,
   transition: all 0.5s;
 }
 
-.btn:hover:before {
+.home-btn .btn:hover:before {
   height: 190%;
+
 }
-.btn a {
+.home-btn .btn a {
   text-decoration: none;
+  display: block;
+  text-align: center;
+  color: #333;
+
 }
 
 .section#home .home-left .text_box {
@@ -345,10 +353,14 @@ ul li a:hover,
   width: 270px;
   padding-bottom: 10px;
 }
+
 .about-info .personal-info ul li.li-w {
   width: 200px;
 }
-
+.about-info .personal-info ul li.link a{
+  text-decoration: none;
+  color: #999;
+}
 /* my-experience */
 .my-experience-inner {
   padding-bottom: 110px;
@@ -479,9 +491,7 @@ ul li a:hover,
   position: relative;
   height: 100vh;
 }
-.project-inner.p-5 {
-  margin-bottom: 36vh;
-}
+
 /* 왼쪽 기기 */
 .left {
   position: absolute;
