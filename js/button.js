@@ -31,7 +31,6 @@ $(function() {
     $(window).scroll(function() {
         if ($(this).scrollTop() > 200) {
             $('#toTop').fadeIn();            
-            $('#toTop').css('left', $('#sidebar').offset().left);
         } else {
             $('#toTop').fadeOut();
         }
