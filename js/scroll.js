@@ -5,8 +5,10 @@ const secId = sections.attr('id');
 
 //버튼 클릭해서 이동하기
 topmenu.click(function (e) {
+	$(diary).unbind('click').click()
 	e.preventDefault() //#의 기본 기능을 차단
 	let target = $(this) //사용자가 클릭한 버튼의 타겟이 저장
+	const diary = $("nav ul.gnb>li.dairy");
 	let href = target.find('a').attr('href');
 	let offset = $(href).offset().top; //offset() : 요소의 위치(문서)
 	$("html, body").animate({ scrollTop: offset }, 1000, "easeOutCirc") //offset 값을 scrollTop에 대입(애니메이션)
