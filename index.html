@@ -81,8 +81,8 @@
             <li class="about"><a href="#about" data-link="About"></a></li>
             <li class="project"><a href="#project" data-link="Project"></a></li>
             <li class="contact"><a href="#contact" data-link="Contact"></a></li>
-<!--             <li class="dairy"><a href="http://asop321.dothome.co.kr/" data-link="Diary" target='_blank'></a></li>
- -->          </ul>
+            <li class="dairy"><a href="http://asop321.dothome.co.kr/" data-link="Diary" target='_blank'></a></li>
+          </ul>
         </div>
       </nav>
       <!-- /herader nav -->
@@ -116,12 +116,12 @@
           <div class="about-me">
             <p class="p-title">About Me</p>
             <h2 class="h2-title">About Me</h2>
-            <div class="about-content">
-              <div class="about-img">
+            <div class="about-content cf">
+              <div class="about-img fl">
                 <img src="https://res.cloudinary.com/asop321/image/upload/v1651079898/SOM_2304_plnfhg.png"
                   alt="about-img">
               </div>
-              <div class="about-info">
+              <div class="about-info fr">
                 <h3>귀사와 &nbsp;<span>하</span><span>나</span>가
                 </h3>
                 <h3> 되고 싶은 김하나입니다.</h3>
@@ -141,7 +141,7 @@
                   <ul class="cf">
                     <li class="fl li-w">이름 : 김하나</li>
                     <li class="fr">전화번호 : 010-8854-9819</li>
-                    <li class="fl li-w">나이 : 29세</li>
+                    <li class="fl li-w">나이 : 28세</li>
                     <li class="fr">이메일 : asop321@naver.com</li>
                     <li class="fl li-w">거주지 : 경기 하남시</li>
                     <li class="fr link">깃허브 : <a href="https://github.com/asop321" target="blank">바로가기</a></li>
@@ -154,9 +154,9 @@
             <h2 class="h2-title">My experience</h2>
             <div class="my-experience-inner">
               <div class="experience-title">
-                <span class="experience-btn">
-                  <button type="button" class="on btn1 before">Skills & Programs </button>
-                  <button type="button" class="on2 btn2">Education & License</button>
+                <span class="experience-btn cf">
+                  <button type="button" class="on btn1 before fl">Skills & Programs </button>
+                  <button type="button" class="on2 btn2 fl">Education & License</button>
                 </span>
               </div>
               <div class="experience-icon experience-icon1 cf">
@@ -224,8 +224,8 @@
                 </div>
                 <div class="license box fl">
                   <button class="content-title">License</button>
-                  <h4>2021 - 2023</h4>
-                  <p class="font-c">웹디자인 기능사
+                  <h4>2021 - 2022</h4>
+                  <p class="font-c">웹디자인 기능사 필기
                   </p>
                   <p class="font-c">
                     GTQi 일러스트 1급
@@ -272,7 +272,7 @@
               <div class="project-info">
                 <span class="project-num">project 01</span>
                 <span class="title">국민건강보험</span>
-                <span class="spec">퍼블리싱 수업을 들으며 처음으로 제작한 적응형 웹사이트 입니다. Html의 구조에 대한 이해와
+                <span class="spec">퍼블리싱 수업을 들으며 처음으로 제작한 웹사이트 입니다. Html의 구조에 대한 이해와
                   접근성에 중요함을 알게 된 프로젝트였습니다. </span>
                 <span class="epilog"></span>
                 <span class="term">제작기간 : 3주 </span>
@@ -484,8 +484,28 @@
         <div class="email">
           <p id="content-holder" class="content-info"><span><img src="./img/mail.svg" alt="mail"></span> asop321 @
             naver.com</p>
-       
+          <button id="copy-button">복사하기</button>
         </div>
+        <Script>
+          /* 이메일 주소 복사 */
+          document.execCommand("copy");
+          var button = document.getElementById("copy-button"),
+            contentHolder = document.getElementById("content-holder");
+          copy = document.getElementById("")
+          button.addEventListener(
+            "click",
+            function () {
+              var range = document.createRange(),
+                selection = window.getSelection();
+              selection.removeAllRanges();
+              range.selectNodeContents(contentHolder);
+              selection.addRange(range);
+              document.execCommand("copy");
+              selection.removeAllRanges();
+            },
+            false,
+          );
+        </Script>
         <p class="content-info"><span><img src="./img/map.svg" alt="map"></span> 경기도 하남시 거주</p>
       </div>
     </div>
