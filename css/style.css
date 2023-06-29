@@ -338,8 +338,6 @@ ul li.active a::after,
 }
 
 .about-content {
-  display: flex;
-  justify-content: space-between;
   padding: 70px 0;
 }
 
@@ -445,9 +443,7 @@ ul li.active a::after,
   font-size: 20px;
   cursor: pointer;
 }
-.experience-btn{
-  display: flex;
-}
+
 .experience-btn button.before {
   background: #f52225;
   border: 2px solid transparent;
