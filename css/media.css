@@ -1,7 +1,29 @@
+/* 데스크탑 */
+@media screen and (min-width:1024px) {
+  nav .nav-inner {
+    width: 100%;
+  }
 
+  .project-inner.project-b {
+    margin-bottom: 36vh; 
+  }
+}
 
-@media screen and (min-width:900px) and (max-width:1500px) {
+/* 태블릿 */
+@media screen and (min-width:768px) and (max-width:1023px) {
+  nav .nav-inner {
+    width: 100%;
+  }
+
+  #home .home-left {
+    width: 100%;
+  }
     .project-inner.project-b {
-        margin-bottom: 36vh;
-      }
+    margin-bottom: 36vh;
+  }
+}
+
+/* 모바일 */
+@media screen and (min-width:767px) {
+  
 }
